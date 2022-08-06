@@ -35,7 +35,7 @@ struct Animation {
             force: Double.random(in: 1.0...5.0),
             curve: curve,
             duration: Double.random(in: 0.5...5.0),
-            delay: Double.random(in: 0.0...5.0)
+            delay: Double.random(in: 0.0...3.0)
         )
         return animation
     }

@@ -69,9 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				AD047A58289D800A00AF2F1D /* Models */,
-				AD57D7E9289D74910084EA0F /* App */,
 				AD57D7EC289D74D30084EA0F /* ViewControllers */,
 				AD57D7EA289D74B10084EA0F /* Storyboards */,
+				AD57D7E9289D74910084EA0F /* App */,
 				AD57D7EB289D74C60084EA0F /* Resources */,
 			);
 			path = SwiftBook;
