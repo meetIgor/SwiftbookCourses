@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SpringAnimation
 
 struct Animation {
     let title: String
@@ -15,28 +14,30 @@ struct Animation {
     let duration: Double
     let delay: Double
     
-    static func getDefault() -> Animation {
-        Animation(
-            title: "pop",
-            force: 1,
-            curve: "easeIn",
-            duration: 1.8,
-            delay: 0.4
-        )
-    }
-    
     static func getRandomAnimation() -> Animation {
         
-        let title = AnimationPreset.allCases.randomElement()?.rawValue ?? "pop"
-        let curve = AnimationCurve.allCases.randomElement()?.rawValue ?? "easeIn"
+        let title = DataStore.shared.animations.randomElement() ?? "pop"
+        let curve = DataStore.shared.curves.randomElement() ?? "easeIn"
         
         let animation = Animation(
             title: title,
-            force: Double.random(in: 1.0...5.0),
+            force: Double.random(in: 1.0...3.0),
             curve: curve,
-            duration: Double.random(in: 0.5...5.0),
-            delay: Double.random(in: 0.0...3.0)
+            duration: Double.random(in: 0.5...2.5),
+            delay: Double.random(in: 0.0...2.0)
         )
         return animation
+    }
+    
+    func description() -> String {
+        let animationInfo =
+        """
+        preset:   \(title)
+        curve:    \(curve)
+        force:    \(String(format: "%.1f", force))
+        duration: \(String(format: "%.1f", duration))
+        delay:    \(String(format: "%.1f", delay))
+        """
+        return animationInfo
     }
 }

@@ -21,12 +21,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var runButton: UIButton!
     
     //MARK: - Private Properties
-    private var animation = Animation.getDefault()
+    private var animation = Animation.getRandomAnimation()
     
     //MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabeles(with: animation)
+        print(animation.description())
     }
     
     //MARK: - IB Actions
