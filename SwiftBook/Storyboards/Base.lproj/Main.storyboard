@@ -70,7 +70,6 @@
                     </view>
                     <connections>
                         <outlet property="infoLabel" destination="LTw-Bt-qMs" id="Xbf-IT-a1i"/>
-                        <outlet property="runButton" destination="ski-Sg-81w" id="QcE-en-byh"/>
                         <outlet property="springView" destination="kfH-Uw-pIV" id="tWq-8z-t0m"/>
                     </connections>
                 </viewController>
