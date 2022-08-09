@@ -9,15 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
     //MARK: - Private Properties
-    private let link = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=negroni"
+    private let link = "https://goweather.herokuapp.com/weather/Kazan"
     
     //MARK: - IB Actions
     @IBAction func getJsonTapped() {
-        fetchDrinks()
+        fetchWeather()
     }
     
     //MARK: - Private Methods
-    private func fetchDrinks() {
+    private func fetchWeather() {
         guard let url = URL(string: link) else { return }
         
         URLSession.shared.dataTask(with: url) { [unowned self] data, _, error in
@@ -27,8 +27,8 @@ class ViewController: UIViewController {
             }
             
             do {
-                let drinks = try JSONDecoder().decode(Drink.self, from: data)
-                print(drinks.description)
+                let weather = try JSONDecoder().decode(Weather.self, from: data)
+                print(weather.weatherInfo)
                 self.successAlert()
             } catch let error {
                 print(error)
