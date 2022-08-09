@@ -13,6 +13,7 @@
 		AD57D7DA289D5A350084EA0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD57D7D8289D5A350084EA0F /* Main.storyboard */; };
 		AD57D7DC289D5A360084EA0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD57D7DB289D5A360084EA0F /* Assets.xcassets */; };
 		AD57D7DF289D5A360084EA0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD57D7DD289D5A360084EA0F /* LaunchScreen.storyboard */; };
+		ADE617C628A26A0300310542 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE617C528A26A0300310542 /* Drink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AD57D7DB289D5A360084EA0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD57D7DE289D5A360084EA0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD57D7E0289D5A360084EA0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE617C528A26A0300310542 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		ADE617C328A182F500310542 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ADE617C528A26A0300310542 /* Drink.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				AD57D7D7289D5A350084EA0F /* ViewController.swift in Sources */,
 				AD57D7D3289D5A350084EA0F /* AppDelegate.swift in Sources */,
+				ADE617C628A26A0300310542 /* Drink.swift in Sources */,
 				AD57D7D5289D5A350084EA0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftBook/Info.plist;
+				INFOPLIST_FILE = SwiftBook/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -363,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftBook/Info.plist;
+				INFOPLIST_FILE = SwiftBook/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
